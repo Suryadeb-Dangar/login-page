@@ -3,7 +3,6 @@ import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 
 function App() {
-  // Simple state to toggle between pages (Use React Router for a real app)
   const [currentPage, setCurrentPage] = useState("login");
 
   return (
