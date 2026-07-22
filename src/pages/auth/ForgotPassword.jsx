@@ -15,7 +15,7 @@ const ForgotPassword = ({ onNavigate }) => {
       <h2>Reset Password</h2>
       <form onSubmit={handleSubmit}>
         <InputField
-          label="Email Address"
+          label="Email"
           type="email"
           name="email"
           value={email}

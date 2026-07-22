@@ -24,7 +24,7 @@ const LoginForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <InputField
-        label="Email Address"
+        label="Email"
         type="email"
         name="email"
         value={formData.email}
