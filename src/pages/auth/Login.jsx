@@ -1,5 +1,6 @@
 import React from "react";
 import LoginForm from "../../components/auth/LoginForm";
+// import ForgotPassword from "../../pages/auth/ForgotPassword"
 
 const Login = ({ onNavigate }) => {
   return (
