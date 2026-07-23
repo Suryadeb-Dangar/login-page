@@ -1,9 +1,8 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,7 +13,28 @@ body {
   min-height: 100vh;
 }
 
-/* ---------------- LEFT SIDE STYLING ---------------- */ 
+/* Expanded Card Container */
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  width: 900px; /* Widened to fix squishing */
+  height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  padding: 0 !important;
+  position: relative;
+
+  /* Split Background: 50% White / 50% Dark Gradient */
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 50%,
+    #1f0505 50%,
+    #080101 100%
+  );
+}
+/*  LEFT SIDE STYLING  */
 .auth-page h2,
 .auth-page form,
 .auth-page .link-btn {
@@ -125,9 +145,9 @@ body {
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-/* 
-Bottom Carousel Indicators 
-.auth-page::after {
+
+/*Bottom Carousel Indicators */
+/* .auth-page::after {
   content: "";
   position: absolute;
   right: 175px;
@@ -141,22 +161,9 @@ Bottom Carousel Indicators
     rgba(255, 255, 255, 0.2) 65%, rgba(255, 255, 255, 0.2) 100%
   );
   border-radius: 2px;
-}   */
+}  */
 
-/* Outer Card Container Layout */ 
-.auth-page {
-  display: flex !important;
-  flex-direction: row !important;
-  width: 850px !important;
-  max-width: 95vw !important;
-  min-height: 540px !important;
-  margin: 0 auto !important;
-  border-radius: 16px !important;
-  overflow: hidden !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-  background-color: #ffffff !important;
-  position: relative !important;
-}
+/* Outer Card Container Layout */
 
 /* Left Panel - Contains all inputs & buttons aligned to the left */ 
 .auth-left-panel {
@@ -177,10 +184,7 @@ Bottom Carousel Indicators
 .auth-right-panel {
   flex: 1 1 50% !important;
   width: 50% !important;
-  background-color: #0d0d0d !important; 
-  /* background-image: './assets/auth-right.jpg'; */
-  background-size: cover;
-  background-position: center;
+  background-image: url("../");
 }
 
 /* Form Container & Elements Stretch Across Left Panel */ 
@@ -273,7 +277,7 @@ Bottom Carousel Indicators
 .btn-social {
   background-color: #ffffff !important;
   color: #374151 !important;
-  border: 1px solid #d1d5db !important;
+  border: 2px solid #727579 !important;
   gap: 10px !important;
 }
 
