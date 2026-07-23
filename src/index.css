@@ -45,9 +45,9 @@ body {
 }
 
 .auth-page h2 {
-  color: red;
   margin-top: 50px;
   margin-bottom: 15px;
+  color: #111111;
   font-size: 26px;
   font-weight: 700;
   text-align: left !important;
@@ -258,7 +258,8 @@ body {
 
 /* Sign In & Sign Up: Identical Background, Text Color & Shadow */
 .btn-primary,
-.btn-signin {
+.btn-signin,
+.btn-signup {
   background-color: #e53e3e !important; /* Red accent color */
   color: #ffffff !important;
   border: none !important;
