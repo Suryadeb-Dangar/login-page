@@ -3,7 +3,6 @@ import InputField from "./InputField";
 import PasswordField from "./PasswordField";
 import SignUpButton from "./SignUpButton";
 import GoogleAuthButton from "./GoogleAuthButton";
-import LinkedInAuthButton from "./LinkedInAuthButton";
 
 const LoginForm = ({ onNavigate }) => {
   const [formData, setFormData] = useState({
@@ -46,9 +45,8 @@ const LoginForm = ({ onNavigate }) => {
 
       {/* Button Stack below Sign In */}
       <div className="auth-buttons-stack">
-        <SignUpButton onClick={() => onNavigate && onNavigate("signup")} />
+        <SignUpButton onClick={() => console.log("Sign Up clicked - inactive")} />
         <GoogleAuthButton onClick={() => console.log("Google click")} />
-        <LinkedInAuthButton onClick={() => console.log("LinkedIn click")} />
 
         {/* Single Forgot Password link at bottom */}
         <button

@@ -1,4 +1,4 @@
-
+/* 
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,11 +14,11 @@ body {
   min-height: 100vh;
 }
 
-/* Expanded Card Container */
+ Expanded Card Container 
 .auth-page {
   display: flex;
   flex-direction: column;
-  width: 900px; /* Widened to fix squishing */
+  width: 900px; 
   height: 520px;
   border-radius: 16px;
   overflow: hidden;
@@ -26,7 +26,7 @@ body {
   padding: 0 !important;
   position: relative;
   
-  /* Split Background: 50% White / 50% Dark Gradient */
+   THIS LINE IS CAUSING THE LIGHT BG LEAK: 
   background: linear-gradient(
     to right,
     #ffffff 0%,
@@ -35,7 +35,7 @@ body {
     #080101 100%
   );
 }
-/* ---------------- LEFT SIDE STYLING ---------------- */
+ ---------------- LEFT SIDE STYLING ---------------- 
 .auth-page h2,
 .auth-page form,
 .auth-page .link-btn {
@@ -89,7 +89,7 @@ body {
   outline: none;
 }
 
-/* Red Action Button */
+ Red Action Button 
 .btn-primary {
   width: 100%;
   padding: 12px;
@@ -126,11 +126,11 @@ body {
   text-decoration: underline;
 }
 
-/* ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- */
+ ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- 
 
-/* Inner Floating Stat Card on Black Side */
+ Inner Floating Stat Card on Black Side 
 .auth-page::before {
-  /* content: "📄 \A\A 12,61,657 \A\A NUMBER OF INVOICES"; */
+   content: "📄 \A\A 12,61,657 \A\A NUMBER OF INVOICES"; 
   white-space: pre-wrap;
   position: absolute;
   right: 65px;
@@ -149,8 +149,8 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/*Bottom Carousel Indicators */
- /* .auth-page::after {
+Bottom Carousel Indicators 
+  .auth-page::after {
   content: "";
   position: absolute;
   right: 175px;
@@ -164,11 +164,11 @@ body {
     rgba(255, 255, 255, 0.2) 65%, rgba(255, 255, 255, 0.2) 100%
   );
   border-radius: 2px;
-}  */
+}  
 
 
 
-/* Outer Card Container Layout */
+ Outer Card Container Layout 
 .auth-page {
   display: flex !important;
   flex-direction: row !important;
@@ -182,7 +182,7 @@ body {
   background-color: #ffffff !important;
 }
 
-/* Left Panel - Contains all inputs & buttons aligned to the left */
+ Left Panel - Contains all inputs & buttons aligned to the left 
 .auth-left-panel {
   flex: 1 1 50% !important;
   width: 50% !important;
@@ -191,25 +191,28 @@ body {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  align-items: flex-start !important; /* Left Aligned */
+  align-items: flex-start !important;  Left Aligned 
   box-sizing: border-box !important;
 }
 
-/* Right Panel - Blank Black Side */
+ Right Panel - Blank Black Side 
 .auth-right-panel {
   flex: 1 1 50% !important;
   width: 50% !important;
-  background-color: #0d0d0d !important;
+   background-color: #0d0d0d !important; 
+  background-image: url(https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+  background-size: contain; 
+
 }
 
-/* Form Container & Elements Stretch Across Left Panel */
+ Form Container & Elements Stretch Across Left Panel 
 .login-form-container,
 .login-form,
 .auth-buttons-stack {
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important; /* Left Aligned */
+  align-items: flex-start !important;  Left Aligned 
   box-sizing: border-box !important;
 }
 
@@ -221,7 +224,7 @@ body {
   text-align: left !important;
 }
 
-/* Input Fields Styling */
+ Input Fields Styling 
 .input-group {
   width: 100% !important;
   display: flex !important;
@@ -249,19 +252,19 @@ body {
   outline: none !important;
 }
 
-/* Stack Gap & Margins */
+ Stack Gap & Margins 
 .auth-buttons-stack {
   gap: 10px !important;
   margin-top: 10px !important;
 }
 
-/* Uniform Size for Sign In & Sign Up Buttons */
+ Uniform Size for Sign In & Sign Up Buttons 
 .btn-primary,
 .btn-signin,
 .btn-signup,
 .btn-social {
   width: 100% !important;
-  height: 42px !important; /* Exact matching height */
+  height: 42px !important;  Exact matching height 
   border-radius: 22px !important;
   font-size: 14px !important;
   font-weight: 600 !important;
@@ -273,11 +276,11 @@ body {
   transition: all 0.2s ease !important;
 }
 
-/* Sign In & Sign Up: Identical Background, Text Color & Shadow */
+ Sign In & Sign Up: Identical Background, Text Color & Shadow 
 .btn-primary,
 .btn-signin,
 .btn-signup {
-  background-color: #e53e3e !important; /* Red accent color */
+  background-color: #e53e3e !important; Red accent color 
   color: #ffffff !important;
   border: none !important;
   box-shadow: 0 4px 12px rgba(229, 62, 62, 0.25) !important;
@@ -288,7 +291,7 @@ body {
   background-color: #dc2626 !important;
 }
 
-/* Google & LinkedIn Social Buttons */
+ Google & Social Buttons 
 .btn-social {
   background-color: #ffffff !important;
   color: #374151 !important;
@@ -301,7 +304,7 @@ body {
   border-color: #9ca3af !important;
 }
 
-/* Forgot Password Link - Left Aligned */
+ Forgot Password Link - Left Aligned 
 .link-btn-forgot {
   background: none !important;
   border: none !important;
@@ -315,4 +318,629 @@ body {
 
 .link-btn-forgot:hover {
   text-decoration: underline !important;
+}
+ 
+ 
+   ADDITIONS FOR FORGOT PASSWORD PAGE LAYOUT
+
+
+ Ensure the ForgotPassword root container takes full left panel height and alignment 
+.auth-left-panel .auth-page {
+  all: unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+ Reset headings inside left panel to align cleanly 
+.auth-left-panel h2 {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  text-align: left !important;
+}
+
+ Make the form fill the left column naturally 
+.auth-left-panel form {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Link Button (Back to Login) Alignment */
+
+/* 
+.auth-left-panel .link-btn {
+  width: 100% !important;
+  padding: 0 !important;
+  margin-top: 16px !important;
+  text-align: left !important;
+  color: #ef4444 !important;
+  font-size: 13px !important;
+} 
+
+
+ ============================================================
+   CARD CONTAINER & PANEL OVERRIDES
+   ============================================================ 
+
+.auth-page {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 850px !important;
+  max-width: 95vw !important;
+  min-height: 540px !important;
+  margin: 40px auto !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+  background-color: #ffffff !important;
+  position: relative !important;
+}
+
+.auth-left-panel {
+  position: relative !important;
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  background-color: #ffffff !important;
+  padding: 36px 40px 60px 40px !important;  Extra bottom padding so inputs never overlap the toggle
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.auth-right-panel {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+}
+
+ Dark Theme Background Sync 
+.auth-page.dark-theme,
+.auth-page.dark-theme .auth-left-panel {
+  background-color: #121212 !important;
+}
+
+ ============================================================
+   THEME TOGGLE BUTTON POSITIONING
+ ============================================================ 
+
+.theme-toggle-switch {
+  position: absolute !important;
+  bottom: 16px !important;
+  right: 16px !important;
+  top: auto !important;
+  left: auto !important;
+  width: 52px !important;
+  height: 26px !important;
+  background-color: #e5e7eb !important;
+  border-radius: 30px !important;
+  border: 1px solid #d1d5db !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 2px !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+  z-index: 20 !important;
+}
+
+.theme-toggle-switch.dark {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+}
+
+.theme-toggle-thumb {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform: translateX(0px) !important;
+}
+
+.theme-toggle-switch.dark .theme-toggle-thumb {
+  transform: translateX(26px) !important;
+  background-color: #1f2937 !important;
+}   
+*/
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #eef2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ---------------- LEFT SIDE STYLING ---------------- */ 
+.auth-page h2,
+.auth-page form,
+.auth-page .link-btn {
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.auth-page h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #111111;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left !important;
+  white-space: nowrap;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666666;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.input-group input:focus {
+  border-color: #e53935;
+  outline: none;
+}
+
+/* Red Action Button */ 
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.35);
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ba1e1e;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 18px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- */ 
+
+/* Inner Floating Stat Card on Black Side */ 
+.auth-page::before {
+  /* content: "📄 \A\A 12,61,657 \A\A NUMBER OF INVOICES";  */
+  white-space: pre-wrap;
+  position: absolute;
+  right: 65px;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 320px;
+  padding: 25px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+/* 
+Bottom Carousel Indicators 
+.auth-page::after {
+  content: "";
+  position: absolute;
+  right: 175px;
+  bottom: 35px;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%, #ffffff 35%,
+    rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.2) 65%,
+    rgba(255, 255, 255, 0.2) 65%, rgba(255, 255, 255, 0.2) 100%
+  );
+  border-radius: 2px;
+}   */
+
+/* Outer Card Container Layout */ 
+.auth-page {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 850px !important;
+  max-width: 95vw !important;
+  min-height: 540px !important;
+  margin: 0 auto !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  background-color: #ffffff !important;
+  position: relative !important;
+}
+
+/* Left Panel - Contains all inputs & buttons aligned to the left */ 
+.auth-left-panel {
+  position: relative !important;
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  background-color: #ffffff !important;
+  padding: 36px 40px 60px 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Right Panel - Blank Black Side */ 
+.auth-right-panel {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  background-color: #0d0d0d !important; 
+  background-image: url(https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+  background-size: cover;
+  background-position: center;
+}
+
+/* Form Container & Elements Stretch Across Left Panel */ 
+.login-form-container,
+.login-form,
+.auth-buttons-stack {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  box-sizing: border-box !important;
+}
+
+.welcome-heading {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin: 2px !important;
+  text-align: left !important;
+}
+
+/* Input Fields Styling */ 
+.input-group {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin-bottom: 12px !important;
+}
+
+.input-group label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #4b5563 !important;
+  margin-bottom: 3px !important;
+  text-align: left !important;
+}
+
+.input-group input {
+  width: 100% !important;
+  height: 40px !important;
+  padding: 0 14px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+/* Stack Gap & Margins */ 
+.auth-buttons-stack {
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+
+/* Uniform Size for Sign In & Sign Up Buttons */ 
+.btn-primary,
+.btn-signin,
+.btn-signup,
+.btn-social {
+  width: 100% !important;
+  height: 42px !important;
+  border-radius: 22px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Sign In & Sign Up: Identical Background, Text Color & Shadow */ 
+.btn-primary,
+.btn-signin,
+.btn-signup {
+  background-color: #e53e3e !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.25) !important;
+}
+
+.btn-signin:hover,
+.btn-signup:hover {
+  background-color: #dc2626 !important;
+}
+
+/* Google & Social Buttons */ 
+.btn-social {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+  gap: 10px !important;
+}
+
+.btn-social:hover {
+  background-color: #f9fafb !important;
+  border-color: #9ca3af !important;
+}
+
+/* Forgot Password Link - Left Aligned */ 
+.link-btn-forgot {
+  background: none !important;
+  border: none !important;
+  color: #ef4444 !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  margin-top: 4px !important;
+  text-align: left !important;
+  padding: 4px 0 !important;
+}
+
+.link-btn-forgot:hover {
+  text-decoration: underline !important;
+}
+
+/* ADDITIONS FOR FORGOT PASSWORD PAGE LAYOUT */
+
+.auth-left-panel .auth-page {
+  all: unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.auth-left-panel h2 {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  text-align: left !important;
+}
+
+.auth-left-panel form {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+/* ============================================================
+   DARK THEME OVERRIDES (UNCOMMENTED & ACTIVE)
+   ============================================================ */
+
+
+
+.auth-page.dark-theme,
+.auth-page.dark-theme .auth-left-panel {
+  background-color: #121212 !important;
+}
+
+
+.auth-page.dark-theme .welcome-heading {
+  color: #ffffff !important;
+}
+
+.auth-page.dark-theme .input-group label {
+  color: #d1d5db !important;
+}
+
+.auth-page.dark-theme .input-group input {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+  border-color: #374151 !important;
+}
+
+.auth-page.dark-theme .input-group input::placeholder {
+  color: #9ca3af !important;
+}
+
+.auth-page.dark-theme .btn-signin,
+.auth-page.dark-theme .btn-signup,
+.auth-page.dark-theme .btn-primary {
+  background-color: #e53e3e !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.auth-page.dark-theme .btn-social {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+/* ============================================================
+   THEME TOGGLE BUTTON POSITIONING (BOTTOM RIGHT OF LEFT PANEL)
+   ============================================================ */
+
+.theme-toggle-switch {
+  position: absolute !important;
+  bottom: auto !important;
+  right: 16px !important;
+  top: 16px !important;
+  left: auto !important;
+  width: 52px !important;
+  height: 26px !important;
+  background-color: #e5e7eb !important;
+  border-radius: 30px !important;
+  border: 1px solid #d1d5db !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 2px !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+  z-index: 20 !important;
+}
+
+.theme-toggle-switch.dark {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+}
+
+.theme-toggle-thumb {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform: translateX(0px) !important;
+}
+
+.theme-toggle-switch.dark .theme-toggle-thumb {
+  transform: translateX(26px) !important;
+  background-color: #1f2937 !important;
+}
+
+
+/* Fix "Reset Password" Heading Visibility in Dark Mode */
+.auth-page.dark-theme .auth-left-panel h2,
+.auth-page.dark-theme .auth-left-panel .welcome-heading {
+  color: #ffffff !important;
+}
+
+/* Fix "Back to Login" Link Formatting & Alignment */
+.auth-left-panel .link-btn,
+.auth-left-panel .link-btn-forgot {
+  width: auto !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  text-align: left !important;
+  margin-top: 16px !important;
+  padding: 0 !important;
+}
+
+/* ============================================================
+   DARK MODE BUTTON HOVER STATES
+   ============================================================ */
+
+/* Primary Action Buttons Hover in Dark Mode (Sign In, Sign Up, Send Reset Link) */
+.auth-page.dark-theme .btn-signin:hover,
+.auth-page.dark-theme .btn-signup:hover,
+.auth-page.dark-theme .btn-primary:hover {
+  background-color: #f87171 !important; /* Lighter red for crisp dark mode contrast */
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.45) !important; /* Enhanced glowing effect */
+  transform: translateY(-1px) !important;
+}
+
+/* Active Click Effect in Dark Mode */
+.auth-page.dark-theme .btn-signin:active,
+.auth-page.dark-theme .btn-signup:active,
+.auth-page.dark-theme .btn-primary:active {
+  transform: translateY(0px) !important;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3) !important;
+}
+
+
+/* ============================================================
+   LIGHT MODE BUTTON HOVER STATE (FORGOT PASSWORD / RESET LINK)
+   ============================================================ */
+
+/* Hover state for Send Reset Link (btn-primary) in Light Mode */
+.auth-page:not(.dark-theme) .btn-primary:hover {
+  background-color: #dc2626 !important; /* Slightly deeper red for white background contrast */
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.35) !important; /* Enhanced shadow depth */
+  transform: translateY(-1px) !important;
+}
+
+/* Click/Active state in Light Mode */
+.auth-page:not(.dark-theme) .btn-primary:active {
+  background-color: #b91c1c !important;
+  transform: translateY(0px) !important;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25) !important;
 }
