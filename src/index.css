@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #eef2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Expanded Card Container */
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  width: 900px; /* Widened to fix squishing */
+  height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  padding: 0 !important;
+  position: relative;
+
+  /* Split Background: 50% White / 50% Dark Gradient */
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 50%,
+    #1f0505 50%,
+    #080101 100%
+  );
+}
+/* ---------------- LEFT SIDE STYLING ---------------- */
+.auth-page h2,
+.auth-page form,
+.auth-page .link-btn {
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.auth-page h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #111111;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left !important;
+  white-space: nowrap;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666666;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.input-group input:focus {
+  border-color: #e53935;
+  outline: none;
+}
+
+/* Red Action Button */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.35);
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ba1e1e;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 18px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- */
+
+/* Inner Floating Stat Card on Black Side */
+.auth-page::before {
+  /* content: "📄 \A\A 12,61,657 \A\A NUMBER OF INVOICES"; */
+  white-space: pre-wrap;
+  position: absolute;
+  right: 65px;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 320px;
+  padding: 25px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*Bottom Carousel Indicators */
+/* .auth-page::after {
+  content: "";
+  position: absolute;
+  right: 175px;
+  bottom: 35px;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%, #ffffff 35%,
+    rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.2) 65%,
+    rgba(255, 255, 255, 0.2) 65%, rgba(255, 255, 255, 0.2) 100%
+  );
+  border-radius: 2px;
+}  */
+
+/* Outer Card Container Layout */
+.auth-page {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 850px !important;
+  max-width: 95vw !important;
+  min-height: 540px !important;
+  margin: 40px auto !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  background-color: #ffffff !important;
+}
+
+/* Left Panel - Contains all inputs & buttons aligned to the left */
+.auth-left-panel {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  background-color: #ffffff !important;
+  padding: 36px 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important; /* Left Aligned */
+  box-sizing: border-box !important;
+}
+
+/* Right Panel - Blank Black Side */
+.auth-right-panel {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  background-color: #0d0d0d !important;
+}
+
+/* Form Container & Elements Stretch Across Left Panel */
+.login-form-container,
+.login-form,
+.auth-buttons-stack {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important; /* Left Aligned */
+  box-sizing: border-box !important;
+}
+
+.welcome-heading {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin: 2px !important;
+  text-align: left !important;
+}
+
+/* Input Fields Styling */
+.input-group {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin-bottom: 12px !important;
+}
+
+.input-group label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #4b5563 !important;
+  margin-bottom: 3px !important;
+  text-align: left !important;
+}
+
+.input-group input {
+  width: 100% !important;
+  height: 40px !important;
+  padding: 0 14px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+/* Stack Gap & Margins */
+.auth-buttons-stack {
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+
+/* Uniform Size for Sign In & Sign Up Buttons */
+.btn-primary,
+.btn-signin,
+.btn-signup,
+.btn-social {
+  width: 100% !important;
+  height: 42px !important; /* Exact matching height */
+  border-radius: 22px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Sign In & Sign Up: Identical Background, Text Color & Shadow */
+.btn-primary,
+.btn-signin,
+.btn-signup {
+  background-color: #e53e3e !important; /* Red accent color */
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.25) !important;
+}
+
+.btn-signin:hover,
+.btn-signup:hover {
+  background-color: #dc2626 !important;
+}
+
+/* Google & LinkedIn Social Buttons */
+.btn-social {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+  gap: 10px !important;
+}
+
+.btn-social:hover {
+  background-color: #f9fafb !important;
+  border-color: #9ca3af !important;
+}
+
+/* Forgot Password Link - Left Aligned */
+.link-btn-forgot {
+  background: none !important;
+  border: none !important;
+  color: #ef4444 !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  margin-top: 4px !important;
+  text-align: left !important;
+  padding: 4px 0 !important;
+}
+
+.link-btn-forgot:hover {
+  text-decoration: underline !important;
+}
