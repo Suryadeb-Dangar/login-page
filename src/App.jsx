@@ -8,9 +8,6 @@ function App() {
       <div className="auth-left-panel">
         <LoginForm />
       </div>
-
-      {/* KEEP THIS PANEL COMPLETELY EMPTY */}
-      {/* Having text inside here was causing the duplicate "Forgot your password?" on the black side */}
       <div className="auth-right-panel"></div>
     </div>
   );

@@ -21,7 +21,7 @@ body {
   height: 520px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   padding: 0 !important;
   position: relative;
 
@@ -45,9 +45,9 @@ body {
 }
 
 .auth-page h2 {
+  color: red;
   margin-top: 50px;
   margin-bottom: 15px;
-  color: #111111;
   font-size: 26px;
   font-weight: 700;
   text-align: left !important;
@@ -164,18 +164,6 @@ body {
 }  */
 
 /* Outer Card Container Layout */
-.auth-page {
-  display: flex !important;
-  flex-direction: row !important;
-  width: 850px !important;
-  max-width: 95vw !important;
-  min-height: 540px !important;
-  margin: 40px auto !important;
-  border-radius: 16px !important;
-  overflow: hidden !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-  background-color: #ffffff !important;
-}
 
 /* Left Panel - Contains all inputs & buttons aligned to the left */
 .auth-left-panel {
@@ -194,7 +182,7 @@ body {
 .auth-right-panel {
   flex: 1 1 50% !important;
   width: 50% !important;
-  background-color: #0d0d0d !important;
+  background-image: url("../");
 }
 
 /* Form Container & Elements Stretch Across Left Panel */
@@ -270,8 +258,7 @@ body {
 
 /* Sign In & Sign Up: Identical Background, Text Color & Shadow */
 .btn-primary,
-.btn-signin,
-.btn-signup {
+.btn-signin {
   background-color: #e53e3e !important; /* Red accent color */
   color: #ffffff !important;
   border: none !important;
@@ -287,7 +274,7 @@ body {
 .btn-social {
   background-color: #ffffff !important;
   color: #374151 !important;
-  border: 1px solid #d1d5db !important;
+  border: 2px solid #727579 !important;
   gap: 10px !important;
 }
 
