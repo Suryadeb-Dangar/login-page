@@ -27,7 +27,9 @@ function App() {
         </div>
         {/* KEEP THIS PANEL COMPLETELY EMPTY */}
         {/* Having text inside here was causing the duplicate "Forgot your password?" on the black side */}
-        <div className="auth-right-panel"></div>
+        <div className="auth-right-panel">
+          <img src="./assets/auth-right.jpg" alt="auth-image" className="logo-img"/>
+        </div>
       </div>
     </div>
   );
