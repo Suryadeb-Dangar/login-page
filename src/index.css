@@ -17,7 +17,7 @@ body {
 .auth-page {
   display: flex;
   flex-direction: column;
-  width: 900px; /* Widened to fix squishing */
+  width: 900px;
   height: 520px;
   border-radius: 16px;
   overflow: hidden;
@@ -86,7 +86,7 @@ body {
   outline: none;
 }
 
-/* Red Action Button */ 
+/* Red Action Button */
 .btn-primary {
   width: 100%;
   padding: 12px;
@@ -123,9 +123,9 @@ body {
   text-decoration: underline;
 }
 
-/* ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- */ 
+/* ---------------- RIGHT SIDE PSEUDO-ELEMENTS ---------------- */
 
-/* Inner Floating Stat Card on Black Side */ 
+/* Inner Floating Stat Card on Black Side */
 .auth-page::before {
   /* content: "📄 \A\A 12,61,657 \A\A NUMBER OF INVOICES";  */
   white-space: pre-wrap;
@@ -165,7 +165,7 @@ body {
 
 /* Outer Card Container Layout */
 
-/* Left Panel - Contains all inputs & buttons aligned to the left */ 
+/* Left Panel - Contains all inputs & buttons aligned to the left */
 .auth-left-panel {
   position: relative !important;
   flex: 1 1 50% !important;
@@ -180,14 +180,14 @@ body {
   transition: background-color 0.3s ease !important;
 }
 
-/* Right Panel - Blank Black Side */ 
+/* Right Panel - Blank Black Side */
 .auth-right-panel {
   flex: 1 1 50% !important;
   width: 50% !important;
   background-image: url("../");
 }
 
-/* Form Container & Elements Stretch Across Left Panel */ 
+/* Form Container & Elements Stretch Across Left Panel */
 .login-form-container,
 .login-form,
 .auth-buttons-stack {
@@ -206,7 +206,7 @@ body {
   text-align: left !important;
 }
 
-/* Input Fields Styling */ 
+/* Input Fields Styling */
 .input-group {
   width: 100% !important;
   display: flex !important;
@@ -234,13 +234,13 @@ body {
   outline: none !important;
 }
 
-/* Stack Gap & Margins */ 
+/* Stack Gap & Margins */
 .auth-buttons-stack {
   gap: 10px !important;
   margin-top: 10px !important;
 }
 
-/* Uniform Size for Sign In & Sign Up Buttons */ 
+/* Uniform Size for Sign In & Sign Up Buttons */
 .btn-primary,
 .btn-signin,
 .btn-signup,
@@ -258,7 +258,7 @@ body {
   transition: all 0.2s ease !important;
 }
 
-/* Sign In & Sign Up: Identical Background, Text Color & Shadow */ 
+/* Sign In & Sign Up: Identical Background, Text Color & Shadow */
 .btn-primary,
 .btn-signin,
 .btn-signup {
@@ -273,7 +273,7 @@ body {
   background-color: #dc2626 !important;
 }
 
-/* Google & Social Buttons */ 
+/* Google & Social Buttons */
 .btn-social {
   background-color: #ffffff !important;
   color: #374151 !important;
@@ -286,7 +286,7 @@ body {
   border-color: #9ca3af !important;
 }
 
-/* Forgot Password Link - Left Aligned */ 
+/* Forgot Password Link - Left Aligned */
 .link-btn-forgot {
   background: none !important;
   border: none !important;
@@ -334,7 +334,6 @@ body {
   flex-direction: column !important;
 }
 
-
 /* ============================================================
    DARK THEME OVERRIDES (UNCOMMENTED & ACTIVE)
    ============================================================ */
@@ -349,7 +348,6 @@ body:has(.dark-theme) {
 .auth-page.dark-theme .auth-left-panel {
   background-color: #121212 !important;
 }
-
 
 .auth-page.dark-theme .welcome-heading {
   color: #ffffff !important;
@@ -402,7 +400,9 @@ body:has(.dark-theme) {
   display: flex !important;
   align-items: center !important;
   padding: 2px !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease !important;
   z-index: 20 !important;
 }
 
@@ -429,7 +429,6 @@ body:has(.dark-theme) {
   transform: translateX(26px) !important;
   background-color: #1f2937 !important;
 }
-
 
 /* Fix "Reset Password" Heading Visibility in Dark Mode */
 .auth-page.dark-theme .auth-left-panel h2,
@@ -469,7 +468,6 @@ body:has(.dark-theme) {
   box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3) !important;
 }
 
-
 /* ============================================================
    LIGHT MODE BUTTON HOVER STATE (FORGOT PASSWORD / RESET LINK)
    ============================================================ */
@@ -488,9 +486,7 @@ body:has(.dark-theme) {
   box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25) !important;
 }
 
-
-.logo-img{
+.logo-img {
   width: 100%;
   display: flex;
 }
-
